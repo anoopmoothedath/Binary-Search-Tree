@@ -21,7 +21,7 @@ Step-3: Traverse the elements in the right subtree of the root node. i.e call in
 ````
 ## Preorder Traversal
 ````
-preorderInBST(BSTNODE root) is as follows
+preorderInBST(BSTNODE root)
 Step-1: Visit the root node
 Step-2: Traverse the elements in the left sub tree of the root node. i.e call preorderInBST(root->left).
 Step-3: Traverse the elements in the right sub tree of the root node. i.e call preorderInBST(root->right).
@@ -36,8 +36,8 @@ Step-3: Visit the root node
 ## Searching
 ````
 searchNodeInBST(BSTNODE root, int ele)
-Step-1: IF ROOT -> DATA = ITEM OR ROOT = NULL, Return ROOT
-Step-2: ELSE IF ROOT < ROOT -> DATA
-Step-3: Return search(ROOT -> LEFT, ITEM)
+Step-1: IF root -> DATA = ITEM OR root= NULL, Return ROOT
+Step-2: ELSE IF root < root -> DATA
+Step-3: Return search(root -> LEFT, ITEM)
 Step-4: ELSE, Return search(ROOT -> RIGHT,ITEM)
 ````
