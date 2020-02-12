@@ -1,6 +1,5 @@
 #include<stdio.h>
 #include<stdlib.h>
-//#include "InsertAndTraversals.c"
 
 struct node { 
   int data; 
@@ -8,13 +7,7 @@ struct node {
 } ;
 
 typedef struct node *BSTNODE;
-/*
-BSTNODE newNodeInBST(int);
-void inorderInBST(BSTNODE);
-void preorderInBST(BSTNODE);
-void postorderInBST(BSTNODE);
-BSTNODE insertNodeInBST(BSTNODE, int);
-*/
+
 BSTNODE newNodeInBST(int item) {
   BSTNODE temp = (BSTNODE)malloc(sizeof(struct node)); 
   temp->data = item;
