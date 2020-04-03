@@ -33,6 +33,21 @@ Step-1: Traverse the elements in the left sub tree of the root node. i.e call po
 Step-2: Traverse the elements in the right sub tree of the root node. i.e call postorderInBST(root->right).
 Step-3: Visit the root node
 ````
+## Deleting a Node
+````
+deleteNodeInBST(BSTNODE root, int ele)
+**Node to be deleted is a leaf :**
+Step-1: Simply deallocate the memory allocated to the node.
+
+**Node to be deleted has one child (either left or right ) :**
+Step-1: Copy the child node (either left or right) to the node to be deleted.
+Step-2: Delete the child node.
+
+**Node to be deleted has both left child and right child :**
+Step-1: Find the minimum value node in the right sub tree say temp. [It is the left most node in the right sub tree of the node to be deleted]
+Step-2: Copy the data of temp in the node to be deleted.
+Step-3: Delete the temp node from the right sub tree of the node to be deleted.
+````
 ## Searching
 ````
 searchNodeInBST(BSTNODE root, int ele)
